@@ -1,0 +1,6 @@
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\bin\Debug\homework1.dll
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\bin\Debug\homework1.pdb
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\obj\Debug\homework1.csproj.AssemblyReference.cache
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\obj\Debug\homework1.csproj.CoreCompileInputs.cache
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\obj\Debug\homework1.dll
+C:\Users\pouli\Desktop\Уник\прога\4 семестр\homework1\homework1\homework1\obj\Debug\homework1.pdb
