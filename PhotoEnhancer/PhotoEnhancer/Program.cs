@@ -85,6 +85,17 @@ namespace PhotoEnhancer
                 (point, size) => new Point(size.Width - point.Y - 1, point.X)
                 ));
 
+            mainForm.AddFilter(new TransformFilter(
+                "Устранение чересстрочной развертки (замена нечетных строк)",
+                size => size,
+                (point, size) => {
+                    if (point.Y % 2 == 0 && point.Y != size.Height - 1)
+                        return new Point(point.X, point.Y + 1);
+                    else
+                        return new Point(point.X, point.Y);
+                }
+                ));
+
             mainForm.AddFilter(new TransformFilter<RotationParameters>(
                 "Поворот на произвольный угол", new RotationTransformer()));
 
