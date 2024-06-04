@@ -99,6 +99,9 @@ namespace PhotoEnhancer
             mainForm.AddFilter(new TransformFilter<RotationParameters>(
                 "Поворот на произвольный угол", new RotationTransformer()));
 
+            mainForm.AddFilter(new TransformFilter<ReversePerspectiveParameters>(
+                "Обратная перспектива", new ReversePerspectiveTransformer()));
+
             Application.Run(mainForm);
         }
     }
