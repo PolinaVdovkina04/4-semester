@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public class ParameterInfo
+    public class ParameterInfo : Attribute
     {
         public string Name { get; set; }
         public double MinValue { get; set; }

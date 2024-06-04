@@ -6,9 +6,5 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public interface IParameters
-    {
-        ParameterInfo[] GetDescription();
-        void SetValues(double[] values);
-    }
+    public interface IParameters {}
 }
