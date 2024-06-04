@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhotoEnhancer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,14 @@ namespace PhotoEnhancer
     {
         protected string name;
 
+        IParametersHandler<TParameters> handler = new StaticParametersHandler<TParameters>();
+
         public ParameterInfo[] GetParametersInfo() 
-            => new TParameters().GetDescription();
+            => handler.GetDescription();
 
         public Photo Process(Photo original, double[] values)
         {
-            var parameters = new TParameters();
-            parameters.SetValues(values);
+            var parameters = handler.CreateParameters(values);
 
             return Process(original, parameters);
         }
